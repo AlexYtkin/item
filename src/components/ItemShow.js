@@ -2,16 +2,20 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Item from './Item';
 
+/*
+Компонент для отображения информации item по id.
+Сейчас, не используется.
+ */
+
 class ItemShow extends Component {
     render(){
         const path = this.props.match.params.id;
-        console.log(path)
         const { items } = this.props;
-        const item = items.find((t) => {
-            return String(t.id) === path
+        const item = items.find((i) => {
+            return String(i.id) === path
         })
         return(
-            <div className="ui segment">
+            <div className="column">
                 <Item
                     description={item.description}
                 />
@@ -21,7 +25,7 @@ class ItemShow extends Component {
 }
 const mapStateToProps = (state) => {
     return {
-        items: state
+        items: state.items
     }
 }
 export default connect(mapStateToProps)(ItemShow);

@@ -2,7 +2,7 @@ const items = [
     {
         id: 1,
         title: 'Info',
-        description: 'This is an stretched grid column. This segment will always match the tab heigh'
+        description: 'Items root page'
     },
     {
         id: 2,

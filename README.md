@@ -1,15 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## ItemApp
 
-## Available Scripts
+1. To install dependencies:
 
-In the project directory, you can run:
+`npm install`
 
-### `npm start`
+2. To build production version:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`npm run build`
 
-### `npm run build`
+3. For development you can use:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`npm start`

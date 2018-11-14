@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 class App extends Component {
   render() {
@@ -8,12 +8,12 @@ class App extends Component {
           <div className="ui grid">
             <div className="column">
               <div className="ui fixed inverted menu">
-                <div className="header item"><NavLink to="/" activeClassName="active">Home</NavLink></div>
-                <div className="item"><NavLink to="/items" activeClassName="active">Items</NavLink></div>
+                <div className="header item"><NavLink exact to="/" activeStyle={{color:'red'}}>Home</NavLink></div>
+                <div className="item"><NavLink to="/items" activeStyle={{color:'red'}}>Items</NavLink></div>
               </div>
             </div>
           </div>
-            <div className="ui grid">
+            <div className="row">
                <br />
                <br />
                <br />
